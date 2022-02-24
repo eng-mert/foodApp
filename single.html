@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Arabic Foods and recipes app">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css"
+        integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>
+        وصفات
+    </title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand " href="./index.html">
+                وصفات
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link  dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            الاصناف
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown" id="categories-list">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="بحث" aria-label="Search"
+                        id="search-field">
+                    <a href="./search.html" class="btn" type="submit" id="search-btn">
+                        بحث
+                    </a>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="row row-cols-2 px-1 mt-5 mb-5">
+        <div class="col-12 col-md-6 mx-auto">
+            <div class="d-flex px-2 mb-3">
+                <button type="button" class="btn btn-outline-primary w-50 mx-2" id="prev-recipe-btn">
+                    الوصفة السابقة
+                </button>
+                <button type="button" class="btn btn-outline-primary w-50 mx-2" id="next-recipe-btn">
+                    الوصفة التالية
+                </button>
+            </div>
+
+            <img src="" alt="image" class="img-fluid recipe-image mb-3" id="recipe-img">
+            <div class="recipe-header mt-3 mb-3 d-flex justify-content-start align-items-center">
+                <h4 class="mb-3 fw-bolder" id="recipe-title"></h4>
+                <a href="./category.html" class="btn btn-primary btn-sm ms-auto" id="recipe-category"></a>
+            </div>
+            <p class="my-4 fw-bolder fs-3">
+                المكونات و المقادير
+            </p>
+            <table class="table table-striped mt-3 border border-2 border-dark" id="content-table">
+
+            </table>
+
+            <p class="my-4 fw-bolder fs-3">
+                طريقة التحضير
+            </p>
+            <ul class="list-group list-group-flush" id="steps-list">
+
+            </ul>
+
+        </div>
+    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+    <script src="./js/single/single.js" type="module"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
