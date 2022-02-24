@@ -1,5 +1,5 @@
-import { setupNavigation, loading, setUpCategoryLink, setUpRecipeLink, setupSearchForm } from "../utils/utils.js"
-import { getAllRecipes, Paginate } from "../utils/database.js"
+import { setupNavigation, loading, setUpCategoryLink, setUpRecipeLink, setupSearchForm } from "./js/utils/utils.js"
+import { getAllRecipes, Paginate } from "./js/utils/database.js"
 
 setupNavigation();
 setupSearchForm();
